@@ -153,6 +153,7 @@ class CookieJar
             $header .= '; SameSite=' . $cookie->offsetGet('sameSite');
         }
 
+        error_log('!'.$header);
         return $header;
     }
 
