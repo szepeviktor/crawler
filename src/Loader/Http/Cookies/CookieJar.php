@@ -158,6 +158,7 @@ class CookieJar
             $header[] = sprintf('%s=%s', $setCookieName, $setCookieValue);
         }
 
+        error_log('!'.implode('; ', $header));
         return implode('; ', $header);
     }
 
